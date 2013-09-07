@@ -11,14 +11,14 @@ app.config([ '$routeProvider', function ( $routeProvider )
             controller: 'MainCtrl'
         }).
         when('/my', {
-            templateUrl: 'partials/my.html',
+            templateUrl: 'my.html',
             controller: 'MyCtrl'
         }).
         when('/about', {
-            templateUrl: 'partials/about.html',
+            templateUrl: 'about.html',
             controller: 'AboutCtrl'
         }).
         otherwise({
-            redirectTo: 'main'
+            redirectTo: '/main'
         });
 }]);
